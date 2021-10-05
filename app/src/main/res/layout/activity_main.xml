@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/home3" />
+
+        <TextView
+            android:id="@+id/txtsample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/sample"
+            android:textSize="20sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_weight=".5">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="386dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Button"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="128dp"
+                    android:layout_height="match_parent"
+                    android:text="Open Button"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:text="TEXT"
+                    android:textAlignment="center"
+                    android:textColor="#3C19AC"
+                    android:textSize="25sp" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="TouchTargetSizeCheck,UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5">
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="COUNT RESULT"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text6"
+            android:layout_marginLeft="133dp"
+            android:text="Delete Button"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button3"
+            android:layout_marginLeft="139dp"
+            android:text="Open Button"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="121dp"
+            android:layout_height="93dp"
+            android:layout_alignBottom="@+id/text6"
+            android:layout_marginBottom="-160dp"
+            android:background="@drawable/ic_baseline_add_24"
+            android:text="xyz demo test"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight=".5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/home2" />
+
+        <EditText
+            android:id="@+id/text1"
+            android:layout_width="286dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:inputType="textPassword"
+            android:text="@string/xxxxxxxxxxxxxxxxxxx"
+            android:textAlignment="center"
+            android:textColor="#FFEB3B"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/text2"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:inputType="textPassword"
+            android:text="@string/xxxxxxxxxxxx"
+            android:textAlignment="center"
+            android:textColor="#FFEB3B"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_toRightOf="@+id/text2"
+            android:inputType="textPassword"
+            android:text="@string/xxxxxxx"
+            android:textAlignment="center"
+            android:textColor="#FFEB3B"
+            android:textSize="30sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/text4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:text="@string/xxxxxxxxxxxxxxxxxxx"
+            android:textColor="#FFEB3B"
+            android:textSize="30sp"
+            android:layout_below="@+id/text3"/>
+
+        <ImageView
+            android:layout_width="53dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/text1"
+            android:src="@drawable/ic_baseline_settings_24" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
